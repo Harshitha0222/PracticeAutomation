@@ -73,7 +73,7 @@ public class StepDefnitions {
 			MyAccount myaccount=new MyAccount(driver);
 			myaccount.MyAccount();
 			RegisterAccount register=new RegisterAccount(driver);
-			register.enterEmail(loginusername );
+			register.enterEmail1(loginusername );
 			RegisterAccount password=new RegisterAccount(driver);
 			password.enterLoginPassword(loginpassword);
 		}

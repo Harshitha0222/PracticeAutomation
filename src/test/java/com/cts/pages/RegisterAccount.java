@@ -42,12 +42,12 @@ public class RegisterAccount {
 	driver.findElement(enterPassowrdLoc).sendKeys(loginpassword);
 	}
 	
-	public void enterEmail(WebDriver driver2, String loginusername) 
+	public void enterEmail1(String loginusername) 
 	{
 	driver.findElement(enteremailLoc).sendKeys(loginusername);
 		
 	}
-public void enterLoginPassword(WebDriver driver2, String loginpassword) {
+public void enterLoginPassword1(String loginpassword) {
 		
 		driver.findElement(enterPassowrdLoc).sendKeys(loginpassword);
 	}

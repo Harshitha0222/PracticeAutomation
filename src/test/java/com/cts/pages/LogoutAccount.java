@@ -49,7 +49,7 @@ public class LogoutAccount {
 		sortByOrder.selectByVisibleText(sortBy);
 
     }
-    public  void selectBook(WebDriver driver)
+    public  void selectBook()
     {
     	driver.findElement(selectBookLoc).click();
     }
