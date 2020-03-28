@@ -33,19 +33,41 @@ public class RegisterAccount {
 	{
 	driver.findElement(clickonRegisterLoc).click();
 	}
-	public  void enterEmail(WebDriver driver, String emailname)
+	public  void enterEmail(String emailname)
 	{
 	driver.findElement(enteremailLoc).sendKeys(emailname);
 	}
-	public   void enterLoginPassword(WebDriver driver, String loginpassword)
+	public   void enterLoginPassword(String loginpassword)
 	{
 	driver.findElement(enterPassowrdLoc).sendKeys(loginpassword);
 	}
-	public  void clickOnLogin(WebDriver driver)
+	
+	public void enterEmail(WebDriver driver2, String loginusername) 
 	{
-	driver.findElement(clickonLoginLoc).click();
+	driver.findElement(enteremailLoc).sendKeys(loginusername);
+		
+	}
+public void enterLoginPassword(WebDriver driver2, String loginpassword) {
+		
+		driver.findElement(enterPassowrdLoc).sendKeys(loginpassword);
 	}
 
+	public void clickOnLogin() {
+		driver.findElement(clickonLoginLoc).click();
+		
+	}
+
+
+	
+
+
+
+
+
+	
+	
+	
+	
 	}
 
 

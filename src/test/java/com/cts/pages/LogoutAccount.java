@@ -18,27 +18,31 @@ public class LogoutAccount {
 	{
 		this.driver=driver;
 	}
-	 public  void ClicokOnshop(WebDriver driver)
-    {
-    	driver.findElement(clickOnShopLoc).click();
-    }
-   public  String getCurrentTitle(WebDriver driver)
+	 
+	
+	public void ClicokOnshop() 
+	{
+		driver.findElement(clickOnShopLoc).click();
+		
+		}
+	
+	public  String getCurrentTitle()
    {
 	  String expectedTitle="Products-Automation Practice Site";
 	   String actualTitle=driver.getTitle();
 	   return actualTitle;
    }
-    public  void clickOnHtmlBook(WebDriver driver)
+    public  void clickOnHtmlBook()
     {
     	driver.findElement(ClickOnHtmlBookLoc).click();
     }
-    public  String getPageTitle(WebDriver driver)
+    public  String getPageTitle()
     {
  	  String expectedTitle="HTM-Automation Practice Site";
  	   String actualTitle=driver.getTitle();
  	   return actualTitle;
     }
-    public  void sortBy(WebDriver driver, String sortBy ) //"Sort by price: high to low"
+    public  void sortBy(String sortBy ) //"Sort by price: high to low"
     {
     	WebElement sorting = driver.findElement(sortingLoc);
 		Select sortByOrder = new Select(sorting);
@@ -49,16 +53,20 @@ public class LogoutAccount {
     {
     	driver.findElement(selectBookLoc).click();
     }
-    public  void clickOnJavaScript(WebDriver driver)
+    public  void clickOnJavaScript()
     {
     	 driver.findElement(clickOnJavaLoc).click();
     }
-    public  void sorting(WebDriver driver, String sortingBy)
+    public  void sorting(String sortingBy)
     {
     	WebElement sorting1 = driver.findElement(sortingLoc1);//Sort by popularity
     	Select sortByOrder = new Select(sorting1);
 		sortByOrder.selectByVisibleText(sortingBy);
     }
+	
+	
+	
+	
 
 	
     

@@ -19,12 +19,12 @@ public MyAccount(WebDriver driver)
 	this.driver=driver;
 }
 
-	public void MyAccount(WebDriver driver)
+	public void MyAccount()
 	{
 	driver.findElement(clickOnmyAccountLoc).click();
 	}
 	
-	public void search(WebDriver driver, String name)
+	public void search(String name)
 	{
 		
 		driver.findElement(searchLoc).sendKeys(name);
@@ -32,28 +32,13 @@ public MyAccount(WebDriver driver)
 		Actions action=new Actions(driver);
 		action.moveToElement(driver.findElement(searchLoc)).sendKeys(Keys.ENTER).build().perform();
 		}
-	public  String displaytext(WebDriver driver)
-	{
+	public String displaytext() {
 		String displayData=driver.findElement(displayTextLoc).getText();
 		return displayData;
-	
+		
 	}
 	
 	
-	
-
-	
-	
-	
-	
-//	public static void search(WebDriver driver)
-//	{
-//		driver.findElement(searchLoc).click();
-//		
-//	}
-	
-	
-
 	}
 
 

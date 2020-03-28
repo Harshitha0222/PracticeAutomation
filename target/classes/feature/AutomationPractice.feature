@@ -8,7 +8,7 @@ Given User launch the browser with practiceautomationtestingPage
 
 @tc01
 Scenario: click on shop 
-When I click on login button and enter loginusername as 'pavanapriyanaka123@gmail.com' and I enter loginpassword as 'Ramadhiganesh12@park12K6'
+When I click on login details from Excel 'src/test/resources/resource/automatonData.xlsx' with SheetName 'logInData'
 And click on login button
 And  click on shop 
 Then I should get access to products page
